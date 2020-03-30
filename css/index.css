@@ -1,0 +1,544 @@
+/* basic web css */
+html, body, p, h1, h2, img{
+    margin:0;
+    padding:0;
+}
+
+/* header css */
+#header-section{
+    background: #08192d;
+    width:100%;
+    height:120px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#main-logo img{
+    display:inline-block;
+    width:160px;
+    margin-left:35px;
+    margin-top:40px;
+}
+
+#header-right{
+    float:right;
+    margin-top:45px;
+    margin-right:40px;
+}
+
+#header-right #hr-btn{
+    display:inline-block;
+    color:#979aa5;
+    padding-right:10px;
+}
+
+#header-right #user-panel{
+    display:inline-block;   
+}
+
+#header-right a{
+    text-decoration: none;
+}
+
+#header-right #login{
+    color:white;
+    padding-left:10px;
+}
+
+#header-right #register{
+    color: #fc0254;
+    padding-left:20px;
+}
+
+#header-right span{
+    display:inline-block;
+    color:white;
+}
+
+#main-navbar #sub-menu{
+    position: absolute; /* 메인따로 서브따로 일자로 정렬 */
+}
+
+#main-navbar{
+    float:right;
+    margin-top:45px;
+    margin-right:130px;
+}
+
+#main-navbar li{
+    display: inline-block;
+	position: relative;
+    list-style: none;
+}
+
+#main-navbar li a{
+    text-decoration: none;
+    color:white;
+    padding:40px 10px;
+    margin-left:60px;
+}
+
+/* #main-navbar a:hover{
+    color:#fc0254;
+} 
+이부분을바꿔야해요*/
+
+#sub-menu {
+    display:none; /* 평상시에 서브메뉴 안보이게 하기 */
+    padding:0px;
+    margin:0px;
+    position: absolute;
+}
+
+#pages:hover #sub-menu{
+    display:block; /* 마우스 올리면 서브메뉴 보이게 하기 */
+    color:#fc0254;
+}
+
+#sub-menu a{
+    color:white;
+}
+
+/* hero-section css */
+#hero-section {
+    background-color:#0a183d; /* section 배경으로 색을 넣으면 이미지 배경까지 커버 가능, div 배경으로 넣으면 이미지에는 배경 적용 X */
+    padding-bottom:220px;
+}
+
+#hero-img{
+    float:right;
+    padding-right:170px;
+    padding-top:90px;
+}
+
+#main-text{
+    padding-top: 90px;
+}
+
+#main-text h2{
+    color: white;
+	font-size: 70px;
+	margin-bottom: 25px;
+	line-height: 0.9;
+	position: relative;
+    top: 50px;
+    padding-left:220px;
+    padding-top:20px;
+    max-width: 600px;
+    white-space:normal;
+}
+
+#main-text h2 span{
+    color:#fc0254;
+    font-size:70px;
+}
+
+#main-text p{
+    color: white;
+	position: relative;
+    top: 50px;
+    padding-left:220px;
+    padding-top:10px;
+    max-width: 670px;
+    white-space:normal; /* normal이 기본값, 여러칸의 공백이나 줄바꿈을 공백 1칸으로 인식, 지정된 넓이의 끝에서 자동으로 줄바꿈 */
+    line-height:1.8;
+    font-weight:500;
+}
+
+#text-button{
+    padding-top:90px;
+    padding-left:210px;
+}
+
+#text-button button{
+    border-radius:60px;
+    border:0;
+    outline:0;
+    width:200px;
+    height:60px;
+}
+
+#text-button button a{
+    color:white;
+    text-decoration: none;
+}
+
+#text-button #down{
+    background-color: #fc0254;
+    padding-right:10px;
+    margin-right:10px;
+}
+
+#text-button #trial{
+    background-color: #383b70;
+}
+
+/* intro-section css */
+#intro-section{
+    margin-bottom:100px;
+}
+
+#intro-section p{
+	margin-bottom:35px;
+	padding-top:10px;
+}
+
+#page2-text h2{
+    display:inline-block;
+    font-size:65px;
+    max-width: 750px;
+    white-space: normal;
+    padding-top:100px;
+    padding-left:220px;
+}
+
+#page2-text p{
+    display:inline-block;
+    max-width:580px;
+    white-space: normal;
+    font-size:15px;
+    padding-left:80px;
+    padding-top:120px;
+    position:absolute;
+    color:#6a7080;
+    line-height:1.8;
+    font-weight:500;
+}
+
+#page2 button{
+    border-radius:60px;
+    border:0;
+    outline:0;
+    width:200px;
+    height:60px;
+    background-color: #fc0254;
+    padding-right:10px;
+    margin-right:10px;
+    margin-left:825px;
+    margin-top:60px;
+}
+
+#page2 button a{
+    color:white;
+    text-decoration: none;
+}
+
+/* how-section css */
+#how-section{
+    background-image: url("../img/how-to-bg.jpg");
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#page3 ul{
+    padding-left:220px;
+}
+
+#page3 li{
+    list-style: none;
+    padding-right:30px;
+    display:inline-block;
+}
+
+#page3 li #account{
+    padding-left:220px;
+}
+
+#page3 li #box{
+    width:60px;
+    height:60px;
+    border-radius: 100%;
+    background-color:#fc0254;
+    display:inline-block;
+    position: relative;
+}
+
+#page3 li img{
+    display:inline-block;
+    z-index:200;
+    position: relative;
+}
+
+#page3 li #brain{
+    width:35px;
+    left:-28px;
+    top:-18px;
+}
+
+#page3 li #pointer{
+    width:40px;
+    left:-35px;
+    top:-18px;
+}
+
+#page3 li #smartphone{
+    width:25px;
+    left:-18px;
+    top:-18px;
+}
+
+#page3 h2{
+    color:white;
+    font-size:65px;
+    padding-left:220px;
+    padding-bottom:80px;
+}
+
+#page3 h3{
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+}
+
+#page3 p{
+    font-size:15px;
+    max-width: 320px;
+    line-height:1.8;
+    color:white;
+    opacity:0.6;
+    font-weight:500;
+}
+
+/* concept-section css */
+#concept-section{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+#page4-text h2{
+    font-size:70px;
+    max-width:700px;
+    padding-left:220px;
+    display:inline-block;
+    position: absolute;
+}
+
+#page4-text p{
+    font-size:15px;
+    max-width:1300px;
+    line-height:1.8;
+    font-weight:500;
+    color:#6a7080;
+    padding-left:800px;
+    padding-top:20px;
+    display:inline-block;
+}
+
+#page4 ul li{
+    list-style:none;
+    display:inline-block;
+    padding-top:100px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+#page4 ul img{
+    border-radius:50px;
+}
+
+#page4 ul #one{
+    margin-left:150px;
+}
+
+#page4 ul #four{
+    margin-right:150px;
+}
+
+#page4 li p{
+    font-size:20px;
+    font-weight:600;
+    text-align:center;
+    padding-top:15px;
+}
+
+/* subscription-section */
+#subscription-section{
+    background-color: #0a183d;
+}
+
+#page5{
+    display: flex;
+    flex-direction: row;
+}
+
+#page5-text{
+    display:inline-block;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+#page5-text h2{
+    color:white;
+    font-size:70px;
+    max-width:750px;
+    padding-left:220px;
+}
+
+#page5-text h3{
+    color:#fc0254;
+    font-size:35px;
+    padding-left:220px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#page5-text p{
+    color:white;
+    opacity: 0.6;
+    max-width:730px;
+    padding-left:220px;
+    line-height:1.6;
+}
+
+#page5 button{
+    border-radius:60px;
+    border:0;
+    outline:0;
+    width:200px;
+    height:60px;
+    background-color: #fc0254;
+    padding-right:10px;
+    margin-right:10px;
+    margin-left:215px;
+    margin-top:40px;
+    color:white;
+}
+
+#page5-list{
+    margin-top:130px;
+}
+
+#page5-list li{
+    list-style: none;
+    color:white;
+    font-size:20px;
+    line-height:3;
+    padding-left:200px;
+}
+
+#page5-list p{
+    display:inline-block;
+    padding-left:10px;
+}
+
+#list-back{
+    margin-left:60px;
+    padding-bottom:415px;
+    padding-top:25px;
+    padding-left:550px;
+    background-color:#1c294a;
+    border-radius:50px;
+}
+
+/* premium-section */
+#page6-text{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#page6-text h2{
+    padding-left:220px;
+    font-size:70px;
+    max-width:800px;
+    display:inline-block;
+}
+
+#page6-text p{
+    font-size:15px;
+    line-height:1.8;
+    max-width:570px;
+    display:inline-block;
+    position: absolute;
+    padding-left:70px;
+    padding-top:10px;
+    font-weight:500;
+    color:#6a7080;
+}
+
+#page6-img{
+    padding-left:220px;
+    padding-right:150px;
+}
+
+#page6-img ul{
+    padding-top:30px;
+    padding-left:25px;
+}
+
+#page6-img li{
+    list-style:none;
+    display:inline-block;
+    padding-right:60px;
+}
+
+#page6-img img{
+    border-radius:100%;
+    padding-left:20px;
+}
+
+#page6-img h4{
+    text-align:center;
+    padding-top:30px;
+    font-size:25px;
+}
+
+#page6-img p{
+    text-align:center;
+    padding-bottom:100px;
+}
+
+/* footer-section */
+.footer-section {
+	background: #0a183d;
+	padding: 100px 0 85px;
+}
+
+.footer-section img{
+    width:160px;
+}
+
+.footer-widget {
+	padding-top: 2px;
+}
+
+.footer-widget h2 {
+	font-size: 20px;
+    color: white;
+	text-transform: uppercase; /* 대문자 변형 */
+    margin-bottom: 30px;
+    padding-left:40px;
+    padding-top:8px;
+}
+
+.footer-widget ul {
+	list-style: none;
+}
+
+.footer-widget ul li a {
+	display: inline-block;
+	color: #6a7080;
+	font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+	font-size: 11px;
+    text-transform: uppercase;
+	font-weight: 500;
+	color: #505565;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.copyright span{
+    color:#fc0254;
+}
+
+#social-links a {
+	display: inline-block;
+	color: #6a7080;
+	font-size: 18px;
+    margin-right: 10px;
+    padding-left:15px;
+}

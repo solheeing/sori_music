@@ -1,0 +1,243 @@
+/* basic web css */
+html, body, p, h1, h2, img{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:1500px;
+}
+
+/* header-css */
+#header-section{
+    background: #08192d;
+    width:100%;
+    height:120px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#main-logo img{
+    display:inline-block;
+    width:160px;
+    margin-left:35px;
+    margin-top:40px;
+}
+
+#header-right{
+    float:right;
+    margin-top:45px;
+    margin-right:40px;
+}
+
+#header-right #hr-btn{
+    display:inline-block;
+    color:#979aa5;
+    padding-right:10px;
+}
+
+#header-right #user-panel{
+    display:inline-block;   
+}
+
+#header-right a{
+    text-decoration: none;
+}
+
+#header-right #login{
+    color:white;
+    padding-left:10px;
+}
+
+#header-right #register{
+    color: #fc0254;
+    padding-left:20px;
+}
+
+#header-right span{
+    display:inline-block;
+    color:white;
+}
+
+#main-navbar #sub-menu{
+    position: absolute; /* 메인따로 서브따로 일자로 정렬 */
+}
+
+#main-navbar{
+    float:right;
+    margin-top:45px;
+    margin-right:130px;
+}
+
+#main-navbar li{
+    display: inline-block;
+	position: relative;
+    list-style: none;
+}
+
+#main-navbar li a{
+    text-decoration: none;
+    color:white;
+    padding:40px 10px;
+    margin-left:60px;
+}
+
+#navbar a:hover{
+    color:#fc0254;
+}
+
+#sub-menu li{
+    display:none; /* 평상시에 서브메뉴 안보이게 하기 */
+    padding:0px;
+    margin:0px;
+    position: absolute;
+}
+
+#sub-menu li:hover{
+    display:block; /* 마우스 올리면 서브메뉴 보이게 하기 */
+    color:#fc0254;
+}
+
+#sub-menu a{
+    color:white;
+}
+
+/* map */
+.map {
+	height: 100%;
+	background: #ddd;
+}
+
+.map iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.contact-warp {
+	padding: 100px 53px 104px 78px;
+}
+
+.contact-warp p {
+	padding-top: 40px;
+	margin-bottom: 50px;
+}
+
+.contact-warp ul {
+	margin-bottom: 90px;
+	list-style: none;
+}
+
+.contact-warp ul li {
+	font-size: 14px;
+	color: #0a183d;
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.contact-from input,
+.contact-from textarea {
+	width: 100%;
+	height: 57px;
+	padding: 0 38px;
+	border: none;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 14px;
+	color: #6a7080;
+	background: #f5f6fa;
+}
+
+.contact-from textarea {
+	resize: none;
+	padding: 24px 38px 10px;
+	height: 177px;
+	margin-bottom: 57px;
+}
+
+.contact-from .site-btn{
+    width:220px;
+    height:70px;
+    background-color:#fc0254;
+    border-radius: 50px;
+    border-style: none;
+    color:white;
+}
+
+/* contact-section */
+.contact-warp h2{
+    font-size:60px;
+}
+
+.contact-warp p{
+    padding-left:5px;
+    color:#979aa5;
+    font-weight: 500;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.contact-warp li{
+    /* 이부분조정필요 */
+    
+}
+
+/* footer-section */
+.footer-section {
+	background-color: #0a183d;
+	padding: 100px 0 85px;
+}
+
+.footer-section img{
+    width:160px;
+}
+
+.footer-widget {
+	padding-top: 2px;
+}
+
+.footer-widget h2 {
+	font-size: 20px;
+    color: white;
+	text-transform: uppercase; /* 대문자 변형 */
+    margin-bottom: 30px;
+    padding-left:40px;
+    padding-top:8px;
+}
+
+.footer-widget ul {
+	list-style: none;
+}
+
+.footer-widget ul li a {
+	display: inline-block;
+	color: #6a7080;
+	font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+	font-size: 11px;
+    text-transform: uppercase;
+	font-weight: 500;
+	color: #505565;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.copyright span{
+    color:#fc0254;
+}
+
+#social-links a {
+	display: inline-block;
+	color: #6a7080;
+	font-size: 18px;
+    margin-right: 10px;
+    padding-left:15px;
+}
